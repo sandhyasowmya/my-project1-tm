@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TEST_NG.BU_VMSBU">
+        <methods>
+          <include name="general"/>
+          <include name="Closebrowser"/>
+          <include name="BU_Head"/>
+        </methods>
+      </class> <!-- TEST_NG.BU_VMSBU -->
+      <class name="TEST_NG.HR">
+        <methods>
+          <include name="general"/>
+          <include name="Closebrowser"/>
+          <include name="HR_Roles"/>
+        </methods>
+      </class> <!-- TEST_NG.HR -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

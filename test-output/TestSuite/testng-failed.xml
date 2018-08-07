@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <listeners>
+    <listener class-name="Common_Methods.RetryListener"/>
+  </listeners>
+  <test thread-count="4" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TEST_NG.HR">
+        <methods>
+          <include name="project_tract"/>
+          <include name="openBrowser"/>
+          <include name="HR_Roles"/>
+        </methods>
+      </class> <!-- TEST_NG.HR -->
+      <class name="TEST_NG.COO">
+        <methods>
+          <include name="coo_credentials"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- TEST_NG.COO -->
+      <class name="TEST_NG.loginNG">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="method"/>
+        </methods>
+      </class> <!-- TEST_NG.loginNG -->
+      <class name="TEST_NG.BU_VMSBU">
+        <methods>
+          <include name="project_BU"/>
+          <include name="openBrowser"/>
+          <include name="BU_Head"/>
+        </methods>
+      </class> <!-- TEST_NG.BU_VMSBU -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="4" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TEST_NG.HR">
+        <methods>
+          <include name="project_tract"/>
+          <include name="openBrowser"/>
+          <include name="HR_Roles"/>
+        </methods>
+      </class> <!-- TEST_NG.HR -->
+      <class name="TEST_NG.COO">
+        <methods>
+          <include name="coo_credentials"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- TEST_NG.COO -->
+      <class name="TEST_NG.loginNG">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="method"/>
+        </methods>
+      </class> <!-- TEST_NG.loginNG -->
+      <class name="TEST_NG.BU_VMSBU">
+        <methods>
+          <include name="project_BU"/>
+          <include name="openBrowser"/>
+          <include name="BU_Head"/>
+        </methods>
+      </class> <!-- TEST_NG.BU_VMSBU -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
